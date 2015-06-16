@@ -1,7 +1,7 @@
 /* A simple C++ program that implements different sorting algorithms.
 
 - Practice With Sorting Algos
-- Bubble, Insertion, Quick, Merge
+- Bubble, Insertion, Quick, Merge, Heap
 
 
 */
@@ -20,6 +20,7 @@ class Array
 		void Resize(int newsize);	// 	Change the array to the new size	
 
 		void PrintArray() const;
+		void CheckSort() const;
 		//int Size() const;
 		void BubbleSort();
 		void InsertionSort();
@@ -29,4 +30,8 @@ class Array
 
 	private:
 		vector<int> elem;
+		void QuickSortHelp(int l, int h);
+		int partition(int l, int h);
+		void MergeSortHelp(int l, int h);
+		void Merge(int l1, int l2, int h1, int h2);
 };
