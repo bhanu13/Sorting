@@ -179,8 +179,20 @@ void Array::Merge(int l1, int l2, int h1, int h2)	// Includes merging the two ar
 	}
 }
 
+//================= HeapSort ========================
+// Build a Min Heap(O(nlogn)) First and then keeping Removing Min element (O(logn)) n times
+
 void Array::HeapSort()
 {
+	heap Minheap(elem);
+	elem.clear();
+	//Minheap.Printheap();
+	int size = Minheap.Size();
+	for(int i = 0; i<size; i++)
+	{
+		elem.push_back(Minheap.RemoveMin());
+		//Minheap.Printheap();
+	}
 
 }
 

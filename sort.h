@@ -5,9 +5,12 @@
 
 
 */
+#ifndef SORT_H
+#define SORT_H
+
 #include <iostream>
 #include <vector>
-
+#include "heap.h"
 
 using namespace std;
 
@@ -35,3 +38,5 @@ class Array
 		void MergeSortHelp(int l, int h);
 		void Merge(int l1, int l2, int h1, int h2);
 };
+
+#endif

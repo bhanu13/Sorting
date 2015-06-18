@@ -12,7 +12,7 @@ int main()
 	//A.InsertionSort();
 	//A.QuickSort();
 	//A.MergeSort();
-	//A.HeapSort();
+	A.HeapSort();
 
 	cout<<"The Sorted Array"<<endl;
 	A.PrintArray();
